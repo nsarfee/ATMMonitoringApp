@@ -1,5 +1,5 @@
 {
   "installCommand": "npm install",
-  "buildCommand": "cd apps/mobile && EXPO_ROUTER_IMPORT_MODE=sync npx expo export --platform web",
+  "buildCommand": "cd apps/mobile && node scripts/fix-expo-router.js && EXPO_ROUTER_IMPORT_MODE=sync npx expo export --platform web",
   "outputDirectory": "apps/mobile/dist"
 }

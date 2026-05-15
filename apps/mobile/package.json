@@ -8,7 +8,7 @@
     "ios": "EXPO_ROUTER_IMPORT_MODE=sync expo start --ios",
     "web": "EXPO_ROUTER_IMPORT_MODE=sync expo start --web",
     "export:web": "EXPO_ROUTER_IMPORT_MODE=sync npx expo export --platform web",
-    "postinstall": "if [ -z \"$VERCEL\" ]; then patch-package; fi"
+    "postinstall": "node scripts/fix-expo-router.js"
   },
   "dependencies": {
     "@atm/shared": "*",
