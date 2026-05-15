@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "ATM Monitor",
+    "slug": "atm-monitor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "atmmonitor",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#f26522"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.atm.monitor"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f26522"
+      },
+      "package": "com.atm.monitor"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
